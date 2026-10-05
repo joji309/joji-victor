@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Joji Victor | Python Django Developer Portfolio</title>
+  <meta name="title" content="Joji Victor | Python Django Developer Portfolio">
+  <meta name="description" content="Portfolio of Joji Victor, Python Django Developer & QA Specialist based in Kerala, India. Expertise in Web Engineering, Software Design, IT Consulting, and Automation Testing.">
+  <meta name="keywords" content="Joji Victor, Python Django Developer, Quality Assurance Intern, Web Developer, Web Engineering, Software Design, IT Consulting, Automation Testing, Steyp, Talrop, NMCC, Don Bosco College, Kerala India">
+  <meta name="author" content="Joji Victor">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Portfolio CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Animated Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="#hero">
+        <img src="images/logo.png" alt="Joji Victor Logo" class="brand-logo-img">
+        <span>Joji Victor</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-3 ms-auto ms-lg-0">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-gradient d-none d-sm-inline-flex btn-sm ms-2">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <i class="fa-solid fa-bars fs-4"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav my-3 my-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Top Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <div class="hero-greeting">
+            <span class="pulse-dot"></span> ✝️ | Python Django Developer | Kerala, India
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Joji Victor</span><br>
+            <span id="typed-output" class="typed-text">Python Django Developer</span>
+          </h1>
+          <p class="hero-description">
+            Passionate Python Django Developer, Web Engineering Specialist, and Quality Assurance Professional based in Kerala, India. Experienced in Software Design, IT Consulting, and Automation Testing.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#experience" class="btn btn-gradient">
+              <i class="fa-solid fa-briefcase"></i> View Experience
+            </a>
+            <a href="#contact" class="btn btn-outline-custom">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="mt-4">
+            <div class="text-muted small mb-2 font-heading fw-semibold">TOP SKILLS & CORE STACK</div>
+            <div class="tech-stack-pills">
+              <span class="tech-pill"><i class="fa-brands fa-python text-warning"></i> Python & Django</span>
+              <span class="tech-pill"><i class="fa-solid fa-code text-primary"></i> Web Engineering</span>
+              <span class="tech-pill"><i class="fa-solid fa-compass-drafting text-info"></i> Software Design</span>
+              <span class="tech-pill"><i class="fa-solid fa-user-tie text-success"></i> IT Consulting</span>
+              <span class="tech-pill"><i class="fa-solid fa-vial-circle-check text-purple"></i> QA & Automation Testing</span>
+              <span class="tech-pill"><i class="fa-solid fa-certificate text-danger"></i> UI Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="code-card-wrapper">
+            <div class="code-card-glow"></div>
+            <div class="code-card">
+              <div class="code-card-header">
+                <div class="mac-buttons">
+                  <span class="mac-btn mac-close"></span>
+                  <span class="mac-btn mac-minimize"></span>
+                  <span class="mac-btn mac-maximize"></span>
+                </div>
+                <span class="code-card-title">joji_victor.py</span>
+              </div>
+              <div class="code-card-body">
+                <div><span class="code-keyword">class</span> <span class="code-var">DeveloperProfile</span>:</div>
+                <div class="ps-3"><span class="code-property">name</span> = <span class="code-string">'Joji Victor'</span></div>
+                <div class="ps-3"><span class="code-property">title</span> = <span class="code-string">'✝️ | Python Django Developer |'</span></div>
+                <div class="ps-3"><span class="code-property">location</span> = <span class="code-string">'Kerala, India'</span></div>
+                <div class="ps-3"><span class="code-property">top_skills</span> = [<span class="code-string">'Web Engineering'</span>, <span class="code-string">'Software Design'</span>, <span class="code-string">'IT Consulting'</span>]</div>
+                <div class="ps-3"><span class="code-property">certifications</span> = [<span class="code-string">'Web App Developer'</span>, <span class="code-string">'UI Engineering'</span>, <span class="code-string">'Automation Testing'</span>]</div>
+                <div class="ps-3"><span class="code-property">contact</span> = <span class="code-string">'jojivictor309@gmail.com'</span></div>
+                <div class="ps-3"><span class="code-property">mobile</span> = <span class="code-string">'8530524158'</span></div>
+                <br>
+                <div><span class="code-comment"># Build high quality Django applications</span></div>
+                <div><span class="code-var">developer</span> = <span class="code-func">DeveloperProfile</span>()</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 text-center text-lg-start">
+          <div class="about-avatar-wrapper mx-auto">
+            <div class="about-avatar-card glass-card">
+              <div class="avatar-svg-placeholder">
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
+              <h3 class="font-heading fw-bold mb-1">Joji Victor</h3>
+              <p class="text-gradient fw-semibold mb-3">✝️ | Python Django Developer |</p>
+              <div class="d-flex justify-content-center gap-2 mb-2 flex-wrap">
+                <span class="badge-custom"><i class="fa-solid fa-location-dot"></i> Kerala, India</span>
+                <span class="badge-custom"><i class="fa-solid fa-code"></i> Web Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <span class="section-subtitle">ABOUT ME</span>
+          <h2 class="section-title mb-4">Crafting Robust Web Applications & <span class="text-gradient">Quality Systems</span></h2>
+          
+          <p class="text-secondary fs-5 mb-4">
+            Hello! I'm <strong>Joji Victor</strong>, a <strong>Python Django Developer</strong>, <strong>Web Engineering Specialist</strong>, and <strong>Quality Assurance Professional</strong> based in <strong>Kerala, India</strong>.
+          </p>
+          <p class="text-secondary mb-4">
+            With hands-on experience in <strong>Self-Employed Web Development</strong> alongside <strong>QA Internships at Steyp and Talrop</strong>, I bridge the gap between software design, clean web engineering, and rigorous automated testing. I hold a <strong>BCA in Computer Science</strong> from Don Bosco College, Panjim and am pursuing an <strong>MBA in Logistics & Supply Chain Management</strong> at NMCC.
+          </p>
+
+          <!-- Key Stats Counters -->
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-sm-3">
+              <div class="stat-box glass-card">
+                <div class="stat-number text-gradient">3</div>
+                <div class="stat-label">Work Roles</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-box glass-card">
+                <div class="stat-number text-gradient">5</div>
+                <div class="stat-label">Certifications</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-box glass-card">
+                <div class="stat-number text-gradient">BCA+MBA</div>
+                <div class="stat-label">Dual Degrees</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-box glass-card">
+                <div class="stat-number text-gradient">100%</div>
+                <div class="stat-label">QA Commitment</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#contact" class="btn btn-gradient">
+              <i class="fa-solid fa-paper-plane"></i> Let's Talk
+            </a>
+            <a href="#experience" class="btn btn-outline-custom">
+              <i class="fa-solid fa-briefcase"></i> View Journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Technologies Section -->
+  <section id="skills" class="section-padding bg-glass">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="section-subtitle">TOP SKILLS</span>
+        <h2 class="section-title">Core Competencies & Stack</h2>
+        <p class="text-secondary">Specialized expertise in Web Engineering, Software Design, IT Consulting, Python Django Development, and Quality Assurance.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Top Skill 1: Web Engineering -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4 class="h5 mb-3">Web Engineering</h4>
+            <p class="text-secondary small mb-3">Building modern, responsive, and robust web applications with clean architecture, HTML5, CSS3, JavaScript, and Bootstrap 5.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">95%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Skill 2: Software Design -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h4 class="h5 mb-3">Software Design</h4>
+            <p class="text-secondary small mb-3">Designing structured, scalable software components, system architectures, database schemas, and clean interface workflows.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">92%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="92%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Skill 3: IT Consulting -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h4 class="h5 mb-3">IT Consulting</h4>
+            <p class="text-secondary small mb-3">Providing technical guidance, web strategy, platform audit, supply chain technology integration, and software optimization.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">90%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python & Django -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h4 class="h5 mb-3">Python Django Development</h4>
+            <p class="text-secondary small mb-3">Developing robust backends, Django ORM models, secure authentication, and RESTful web services in Python.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">94%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="94%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automation Testing & QA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-vial-circle-check"></i>
+            </div>
+            <h4 class="h5 mb-3">Quality Assurance & Automation</h4>
+            <p class="text-secondary small mb-3">Designing test cases, conducting manual & automated testing suites, defect tracking, and software quality validation.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">92%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="92%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI Engineering -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card glass-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4 class="h5 mb-3">UI Engineering</h4>
+            <p class="text-secondary small mb-3">Crafting fluid user interfaces, responsive grid layouts with Bootstrap 5, interactive DOM components, and modern CSS aesthetics.</p>
+            <div class="d-flex justify-content-between small fw-semibold mb-1">
+              <span>Proficiency</span>
+              <span class="text-gradient">95%</span>
+            </div>
+            <div class="progress-custom">
+              <div class="progress-bar-gradient" data-width="95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section-padding">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="section-subtitle">CREDENTIALS</span>
+        <h2 class="section-title">Certifications & Training</h2>
+        <p class="text-secondary">Verified credentials across Web Application Development, UI Engineering, Automation Testing, and Security.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Certification 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+            <div class="contact-icon mb-0 flex-shrink-0">
+              <i class="fa-solid fa-laptop-code text-gradient"></i>
+            </div>
+            <div>
+              <span class="badge-custom text-uppercase mb-2">Verified Skill</span>
+              <h4 class="h5 mb-1 font-heading">Web Application Developer</h4>
+              <p class="text-secondary small mb-0">Professional certification in full-lifecycle web application design, frontend architecture, and web engineering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+            <div class="contact-icon mb-0 flex-shrink-0">
+              <i class="fa-solid fa-wand-magic-sparkles text-gradient"></i>
+            </div>
+            <div>
+              <span class="badge-custom text-uppercase mb-2">Verified Skill</span>
+              <h4 class="h5 mb-1 font-heading">UI Engineering</h4>
+              <p class="text-secondary small mb-0">Specialized certification in responsive UI component construction, modern layout design, and user experience design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+            <div class="contact-icon mb-0 flex-shrink-0">
+              <i class="fa-solid fa-robot text-gradient"></i>
+            </div>
+            <div>
+              <span class="badge-custom text-uppercase mb-2">Verified Skill</span>
+              <h4 class="h5 mb-1 font-heading">Introduction to Automation Testing</h4>
+              <p class="text-secondary small mb-0">Practical training in software test automation, test script formulation, and quality assurance execution.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 4 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+            <div class="contact-icon mb-0 flex-shrink-0">
+              <i class="fa-solid fa-award text-gradient"></i>
+            </div>
+            <div>
+              <span class="badge-custom text-uppercase mb-2">Talrop Internship</span>
+              <h4 class="h5 mb-1 font-heading">QA Internship Talrop</h4>
+              <p class="text-secondary small mb-0">Official Quality Assurance Internship completion credential at Talrop, validating hands-on web testing and quality management.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 5 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+            <div class="contact-icon mb-0 flex-shrink-0">
+              <i class="fa-solid fa-shield-halved text-gradient"></i>
+            </div>
+            <div>
+              <span class="badge-custom text-uppercase mb-2">Security Webinar</span>
+              <h4 class="h5 mb-1 font-heading">Ethical Hacking Webinar</h4>
+              <p class="text-secondary small mb-0">Specialized participation & training in web application vulnerability awareness, penetration testing concepts, and ethical hacking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-4">
+        <span class="section-subtitle">PORTFOLIO SHOWCASE</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="text-secondary">Explore my web engineering solutions divided into Catholic Ministry Projects and Industry Technical Projects.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="d-flex justify-content-center gap-2 flex-wrap mb-5">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="catholic"><i class="fa-solid fa-cross me-1 text-warning"></i> Catholic Projects</button>
+        <button class="filter-btn" data-filter="industry"><i class="fa-solid fa-briefcase me-1 text-info"></i> Industry Projects</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Catholic Project 1: Syro Malabar Church North Goa -->
+        <div class="col-md-6 project-item" data-category="catholic">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <iframe src="https://syromalabarchurchnorthgoa.in/" class="project-live-iframe" loading="lazy" title="Syro Malabar Church North Goa - Live Preview"></iframe>
+              <div class="project-overlay">
+                <a href="https://syromalabarchurchnorthgoa.in/" target="_blank" rel="noopener" class="btn btn-sm btn-gradient">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Visit Live Site
+                </a>
+                <button class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#projectModalCatholic1">
+                  <i class="fa-solid fa-circle-info me-1"></i> Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge-custom text-uppercase"><i class="fa-solid fa-cross me-1 text-warning"></i> Catholic Project</span>
+                <a href="https://syromalabarchurchnorthgoa.in/" target="_blank" rel="noopener" class="text-primary small fw-semibold">
+                  <i class="fa-solid fa-globe me-1"></i> Live Site <i class="fa-solid fa-external-link ms-1"></i>
+                </a>
+              </div>
+              <h3 class="project-title">Syro Malabar Church North Goa</h3>
+              <p class="project-desc">Official web portal for the Syro Malabar Catholic Church Community in North Goa featuring parish announcements, Holy Mass timings, news updates, and community resources.</p>
+              <div class="project-tech">
+                <span class="tech-pill"><i class="fa-solid fa-globe"></i> Live Website</span>
+                <span class="tech-pill">Catholic Ministry</span>
+                <span class="tech-pill">Parish Portal</span>
+                <span class="tech-pill">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Catholic Project 2: Encounter Christ Online -->
+        <div class="col-md-6 project-item" data-category="catholic">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <iframe src="https://encounterchrist.online/" class="project-live-iframe" loading="lazy" title="Encounter Christ Online - Live Preview"></iframe>
+              <div class="project-overlay">
+                <a href="https://encounterchrist.online/" target="_blank" rel="noopener" class="btn btn-sm btn-gradient">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Visit Live Site
+                </a>
+                <button class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#projectModalCatholic2">
+                  <i class="fa-solid fa-circle-info me-1"></i> Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge-custom text-uppercase"><i class="fa-solid fa-cross me-1 text-warning"></i> Catholic Project</span>
+                <a href="https://encounterchrist.online/" target="_blank" rel="noopener" class="text-primary small fw-semibold">
+                  <i class="fa-solid fa-globe me-1"></i> Live Site <i class="fa-solid fa-external-link ms-1"></i>
+                </a>
+              </div>
+              <h3 class="project-title">Encounter Christ Online</h3>
+              <p class="project-desc">Digital Catholic faith & evangelization platform providing online Christian fellowship, spiritual reflections, daily devotions, and prayer community resources.</p>
+              <div class="project-tech">
+                <span class="tech-pill"><i class="fa-solid fa-globe"></i> Live Website</span>
+                <span class="tech-pill">Faith Platform</span>
+                <span class="tech-pill">Web Architecture</span>
+                <span class="tech-pill">Evangelization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Project 1: Steyp QA Platform Testing -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="industry">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <div class="project-preview-graphic text-purple">
+                <i class="fa-solid fa-vial-circle-check fs-1 mb-2"></i>
+                <div class="fw-bold fs-5">Steyp Tech QA & Testing Suite</div>
+                <div class="small text-secondary">Quality Assurance Internship Project</div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-gradient" data-bs-toggle="modal" data-bs-target="#projectModalIndustry1">
+                  <i class="fa-solid fa-circle-info me-1"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="badge-custom text-uppercase mb-2"><i class="fa-solid fa-briefcase me-1 text-info"></i> Industry Project</span>
+              <h3 class="project-title">Steyp Tech QA & Platform Testing</h3>
+              <p class="project-desc">Comprehensive software quality assurance system, automated test script routines, and functional platform testing executed during QA Internship at Steyp.</p>
+              <div class="project-tech">
+                <span class="tech-pill">Automation Testing</span>
+                <span class="tech-pill">Quality Assurance</span>
+                <span class="tech-pill">Defect Tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Project 2: Talrop QA Automation Workflow -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="industry">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <div class="project-preview-graphic text-emerald">
+                <i class="fa-solid fa-list-check fs-1 mb-2"></i>
+                <div class="fw-bold fs-5">Talrop QA Test Automation</div>
+                <div class="small text-secondary">Quality Assurance Internship Project</div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-gradient" data-bs-toggle="modal" data-bs-target="#projectModalIndustry2">
+                  <i class="fa-solid fa-circle-info me-1"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="badge-custom text-uppercase mb-2"><i class="fa-solid fa-briefcase me-1 text-info"></i> Industry Project</span>
+              <h3 class="project-title">Talrop QA Automation Workflow</h3>
+              <p class="project-desc">Quality assurance test management system, bug report validation, test suite documentation, and web component test workflows developed at Talrop.</p>
+              <div class="project-tech">
+                <span class="tech-pill">Test Scripting</span>
+                <span class="tech-pill">QA Management</span>
+                <span class="tech-pill">Regression Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Project 3: Python Django Web Engineering Portal -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="industry">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <div class="project-preview-graphic text-cyan">
+                <i class="fa-brands fa-python fs-1 mb-2"></i>
+                <div class="fw-bold fs-5">Python Django Web Portal</div>
+                <div class="small text-secondary">Web Engineering System</div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-gradient" data-bs-toggle="modal" data-bs-target="#projectModalIndustry3">
+                  <i class="fa-solid fa-circle-info me-1"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="badge-custom text-uppercase mb-2"><i class="fa-solid fa-briefcase me-1 text-info"></i> Industry Project</span>
+              <h3 class="project-title">Python Django Web Engineering Portal</h3>
+              <p class="project-desc">Scalable backend web architecture built with Python and Django ORM, secure authentication systems, RESTful services, and Bootstrap 5 frontend.</p>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Django</span>
+                <span class="tech-pill">Web Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Project 4: IT Consulting & Software Design -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="industry">
+          <div class="project-card glass-card h-100">
+            <div class="project-thumb">
+              <div class="project-preview-graphic text-danger">
+                <i class="fa-solid fa-compass-drafting fs-1 mb-2"></i>
+                <div class="fw-bold fs-5">IT Consulting & Software Design</div>
+                <div class="small text-secondary">Enterprise Consulting System</div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-gradient" data-bs-toggle="modal" data-bs-target="#projectModalIndustry4">
+                  <i class="fa-solid fa-circle-info me-1"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="badge-custom text-uppercase mb-2"><i class="fa-solid fa-briefcase me-1 text-info"></i> Industry Project</span>
+              <h3 class="project-title">IT Consulting & Software Architecture</h3>
+              <p class="project-desc">Strategic enterprise consulting model integrating logistics supply chain management (MBA) with technical software architecture and web solutions.</p>
+              <div class="project-tech">
+                <span class="tech-pill">Software Design</span>
+                <span class="tech-pill">IT Consulting</span>
+                <span class="tech-pill">Supply Chain Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="section-padding bg-glass">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="section-subtitle">MY JOURNEY</span>
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="text-secondary">A detailed breakdown of my professional roles, quality assurance internships, and academic background.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Work Experience Timeline -->
+        <div class="col-lg-6">
+          <h3 class="h4 mb-4 font-heading d-flex align-items-center gap-2">
+            <i class="fa-solid fa-briefcase text-gradient"></i> Work Experience
+          </h3>
+          <div class="timeline">
+            <!-- Experience 1: Self Employed -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">September 2026 - Present (2 months)</div>
+                <h4 class="h5 mb-1">Web Developer</h4>
+                <div class="text-gradient fw-semibold mb-2"><i class="fa-solid fa-building"></i> Self Employed</div>
+                <div class="text-muted small mb-2"><i class="fa-solid fa-location-dot"></i> Kerala, India</div>
+                <p class="text-secondary small mb-0">
+                  Delivering custom Web Development, Python Django web applications, IT Consulting, and Software Design solutions for clients.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 2: Steyp -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">April 2025 - February 2026 (11 months)</div>
+                <h4 class="h5 mb-1">Quality Assurance Intern</h4>
+                <div class="text-gradient fw-semibold mb-2"><i class="fa-solid fa-building"></i> Steyp - Tech Platform</div>
+                <div class="text-muted small mb-2"><i class="fa-solid fa-location-dot"></i> Kochi</div>
+                <p class="text-secondary small mb-0">
+                  Executed software QA testing workflows, automated test routines, UI engineering validation, and defect tracking across tech platform modules.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 3: Talrop -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">July 2024 - January 2025 (7 months)</div>
+                <h4 class="h5 mb-1">Quality Assurance Intern</h4>
+                <div class="text-gradient fw-semibold mb-2"><i class="fa-solid fa-building"></i> Talrop</div>
+                <div class="text-muted small mb-2"><i class="fa-solid fa-location-dot"></i> Ernakulam</div>
+                <p class="text-secondary small mb-0">
+                  Conducted quality assurance testing routines, test case documentation, automation testing introductions, and web system quality checks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="col-lg-6" id="education">
+          <h3 class="h4 mb-4 font-heading d-flex align-items-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-gradient"></i> Education
+          </h3>
+          <div class="timeline">
+            <!-- Education 1: NMCC -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">(July 2026)</div>
+                <h4 class="h5 mb-1">Master of Business Administration (MBA)</h4>
+                <div class="text-gradient fw-semibold mb-2"><i class="fa-solid fa-school"></i> NMCC</div>
+                <p class="text-secondary small mb-0">
+                  Logistics, Materials, and Supply Chain Management &bull; Integrating management strategy with IT consulting and technology systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Education 2: Don Bosco College -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">(June 2023 - June 2026)</div>
+                <h4 class="h5 mb-1">BCA, Computer Science</h4>
+                <div class="text-gradient fw-semibold mb-2"><i class="fa-solid fa-school"></i> Don Bosco College, Panjim</div>
+                <p class="text-secondary small mb-0">
+                  Bachelor of Computer Applications &bull; Core studies in Web Engineering, Software Design, Programming, and Database Systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="section-subtitle">SERVICES I OFFER</span>
+        <h2 class="section-title">What I Can Do For You</h2>
+        <p class="text-secondary">Providing end-to-end web engineering services from visual design to backend code deployment.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="h5 mb-2">Full Stack Web Apps</h3>
+            <p class="text-secondary small">Complete web application development connecting sleek frontend UIs with powerful backend business logic.</p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="h5 mb-2">Responsive Bootstrap UI</h3>
+            <p class="text-secondary small">Building mobile-first, pixel-perfect, and highly responsive user interfaces using Bootstrap 5 and modern CSS.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3 class="h5 mb-2">REST API & Node Backend</h3>
+            <p class="text-secondary small">Designing efficient JSON APIs, Express routing structures, authentication mechanisms, and server logic.</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="h5 mb-2">Speed & SEO Optimization</h3>
+            <p class="text-secondary small">Boosting page load speeds, optimizing asset sizes, and structuring semantic HTML tags for high search rankings.</p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3 class="h5 mb-2">Free GitHub Pages Hosting</h3>
+            <p class="text-secondary small">Deploying static portfolios, landing pages, and web apps to GitHub Pages with zero hosting costs and custom domain support.</p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-bug-slash"></i>
+            </div>
+            <h3 class="h5 mb-2">Code Maintenance & Fixes</h3>
+            <p class="text-secondary small">Refactoring legacy CSS/JS, fixing responsiveness issues, and resolving cross-browser compatibility bugs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Sandbox Widget -->
+  <section id="sandbox" class="section-padding bg-glass">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5">
+          <span class="section-subtitle">INTERACTIVE DEMO</span>
+          <h2 class="section-title mb-3">Live Developer Terminal</h2>
+          <p class="text-secondary mb-4">
+            Click the tabs below to test live JSON API simulation responses right inside this browser terminal.
+          </p>
+          <div class="d-flex gap-2 align-items-center text-secondary small">
+            <i class="fa-solid fa-terminal text-gradient fs-4"></i>
+            <span>Simulating live server response headers & JSON payloads</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="playground-box glass-card">
+            <div class="d-flex bg-dark border-bottom border-secondary border-opacity-25 px-3 pt-2">
+              <button class="terminal-tab-btn active" data-tab="bio">bio.json</button>
+              <button class="terminal-tab-btn" data-tab="skills">skills.json</button>
+              <button class="terminal-tab-btn" data-tab="contact">ping_api.sh</button>
+            </div>
+            <div id="terminal-output" class="terminal-output">
+// Joji Victor - Developer Profile JSON
+{
+  "name": "Joji Victor",
+  "title": "✝️ | Python Django Developer |",
+  "location": "Kerala, India",
+  "contact": {
+    "mobile": "8530524158",
+    "email": "jojivictor309@gmail.com",
+    "linkedin": "www.linkedin.com/in/jojivictor-2080b5231"
+  },
+  "top_skills": ["Web Engineering", "Software Design", "IT Consulting"],
+  "certifications": [
+    "Web Application Developer",
+    "UI Engineering",
+    "Introduction to Automation testing",
+    "QA Internship Talrop",
+    "Ethical hacking Webinar"
+  ]
+}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="section-subtitle">GET IN TOUCH</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="text-secondary">Have a project in mind or looking for a skilled Full Stack Developer? Drop me a line!</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Contact Info -->
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card glass-card h-100 mb-0">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="text-muted small fw-semibold">MOBILE</div>
+              <a href="tel:8530524158" class="fw-bold text-primary">8530524158</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card glass-card h-100 mb-0">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="text-muted small fw-semibold">EMAIL ME</div>
+              <a href="mailto:jojivictor309@gmail.com" class="fw-bold text-primary text-break">jojivictor309@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card glass-card h-100 mb-0">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div>
+              <div class="text-muted small fw-semibold">LINKEDIN</div>
+              <a href="https://www.linkedin.com/in/jojivictor-2080b5231" target="_blank" rel="noopener" class="fw-bold text-primary text-break">jojivictor-2080b5231</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card glass-card h-100 mb-0">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-muted small fw-semibold">LOCATION</div>
+              <span class="fw-bold text-primary">Kerala, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="mb-4">
+        <a class="navbar-brand navbar-brand-logo justify-content-center fs-3 mb-2 d-inline-flex align-items-center gap-2" href="#hero">
+          <img src="images/logo.png" alt="Joji Victor Logo" class="brand-logo-img">
+          <span>Joji Victor</span>
+        </a>
+        <p class="text-secondary small">✝️ | Python Django Developer | &bull; Web Engineering &bull; Software Design &bull; IT Consulting &bull; Kerala, India</p>
+      </div>
+
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="https://www.linkedin.com/in/jojivictor-2080b5231" target="_blank" rel="noopener" class="social-link-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:jojivictor309@gmail.com" class="social-link-btn" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:8530524158" class="social-link-btn" title="Phone">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+
+      <div class="border-top border-secondary border-opacity-25 pt-4">
+        <p class="text-muted small mb-0">
+          &copy; 2026 <strong>Joji Victor</strong>. All rights reserved. Python Django Developer & QA Engineering Specialist.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Modals for Project Details -->
+  <!-- Catholic Project Modal 1 -->
+  <div class="modal fade" id="projectModalCatholic1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-solid fa-church me-2 text-warning"></i> Syro Malabar Church North Goa</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Official website for the Syro Malabar Catholic Church Community in North Goa. Designed and built to serve the parish community with easy access to Mass schedules, announcements, parish history, and event updates.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Key Highlights:</h6>
+          <ul class="text-secondary small">
+            <li>Live Parish Web Portal: <a href="https://syromalabarchurchnorthgoa.in/" target="_blank" class="text-primary">syromalabarchurchnorthgoa.in</a></li>
+            <li>Mobile-first responsive design for all devices</li>
+            <li>Parish event calendars, Holy Mass schedules, and spiritual community resources</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <a href="https://syromalabarchurchnorthgoa.in/" target="_blank" class="btn btn-gradient"><i class="fa-solid fa-external-link me-1"></i> Visit Live Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Catholic Project Modal 2 -->
+  <div class="modal fade" id="projectModalCatholic2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-solid fa-cross me-2 text-info"></i> Encounter Christ Online</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Digital Catholic faith and evangelization platform dedicated to bringing people together in prayer, daily spiritual reflections, and Christian fellowship online.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Key Highlights:</h6>
+          <ul class="text-secondary small">
+            <li>Live Faith Platform: <a href="https://encounterchrist.online/" target="_blank" class="text-primary">encounterchrist.online</a></li>
+            <li>Daily devotions, spiritual reflections, and Catholic community engagement</li>
+            <li>Clean web architecture built for seamless accessibility and spiritual growth</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <a href="https://encounterchrist.online/" target="_blank" class="btn btn-gradient"><i class="fa-solid fa-external-link me-1"></i> Visit Live Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Project Modal 1 -->
+  <div class="modal fade" id="projectModalIndustry1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-solid fa-vial-circle-check me-2 text-purple"></i> Steyp Tech QA & Platform Testing</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Quality Assurance internship project at Steyp Tech Platform. Executed end-to-end software quality testing, UI validation, automated test scripting, and defect resolution tracking across tech platform modules.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Responsibilities:</h6>
+          <ul class="text-secondary small">
+            <li>Test automation and manual test case execution (11 months internship)</li>
+            <li>Functional testing, regression testing, and UI consistency verification</li>
+            <li>Cross-browser compatibility testing and bug report documentation</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Project Modal 2 -->
+  <div class="modal fade" id="projectModalIndustry2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-solid fa-list-check me-2 text-emerald"></i> Talrop QA Automation Workflow</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Quality Assurance internship project at Talrop. Designed test documentation, introduced automated testing routines, and conducted comprehensive web component testing.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Responsibilities:</h6>
+          <ul class="text-secondary small">
+            <li>Software QA testing routines (7 months internship)</li>
+            <li>Introduction to automation testing frameworks and script design</li>
+            <li>Bug identification, defect lifecycle management, and QA reports</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Project Modal 3 -->
+  <div class="modal fade" id="projectModalIndustry3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-brands fa-python me-2 text-cyan"></i> Python Django Web Engineering Portal</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Backend web application developed using Python and Django framework, featuring ORM database models, user authorization, and clean RESTful API integration.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Key Architecture:</h6>
+          <ul class="text-secondary small">
+            <li>Django MVT pattern implementation with PostgreSQL/SQLite database</li>
+            <li>REST API endpoint creation and authentication security</li>
+            <li>Clean web engineering principles and fast rendering</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Project Modal 4 -->
+  <div class="modal fade" id="projectModalIndustry4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-secondary text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading"><i class="fa-solid fa-compass-drafting me-2 text-danger"></i> IT Consulting & Software Architecture</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary">
+            Enterprise IT consulting project combining software design principles with MBA specialization in Logistics and Supply Chain Management.
+          </p>
+          <h6 class="font-heading text-gradient mt-3">Consulting Scope:</h6>
+          <ul class="text-secondary small">
+            <li>IT Infrastructure advisory and software design specifications</li>
+            <li>Logistics & Materials supply chain software integration</li>
+            <li>Performance auditing and workflow digital transformation</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
